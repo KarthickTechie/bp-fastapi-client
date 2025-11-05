@@ -16,8 +16,9 @@ clientID,appId,apiname,apischema
 
 
 ## TODO 1 : 1 create a DatabaseConnectionUrl variable
-
-DATABASE_URL = os.environ["DATABASE_URL"]
+##DATABASE_URL = 'postgresql://postgres:postgres@192.168.0.172:5432/postgres'
+DATABASE_URL = 'postgresql://neondb_owner:npg_x7sCnUzQW0iM@ep-curly-scene-a4fstp5c-pooler.us-east-1.aws.neon.tech/buildperfect?sslmode=require&channel_binding=require'
+## DATABASE_URL = os.environ["DATABASE_URL"]
 ## TODO 2 - create engine 
 
 engine = create_engine(DATABASE_URL,echo=True)
