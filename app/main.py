@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from typing import Annotated
 
@@ -16,11 +17,10 @@ clientID,appId,apiname,apischema
 
 ## TODO 1 : 1 create a DatabaseConnectionUrl variable
 
-DB_CONNECTION_URL = 'mysql+pymysql://root:root@localhost:3306/build_perfect'
-# DB_CONNECTION_URL = 'postgresql://postgres:postgres@192.168.0.172:5432/postgres'
+DATABASE_URL = os.environ["DATABASE_URL"]
 ## TODO 2 - create engine 
 
-engine = create_engine(DB_CONNECTION_URL,echo=True)
+engine = create_engine(DATABASE_URL,echo=True)
 
 # TODO 3 - create database and table 
 
