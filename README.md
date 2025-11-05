@@ -27,3 +27,7 @@
 curl https://your-app.vercel.app
 # → {"Hello": "Vercel + Neon", "postgres_time": "2025-11-05T12:34:56Z"}
 ```
+
+## deployment to vercel
+
+patch 1
