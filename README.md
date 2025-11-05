@@ -31,3 +31,7 @@ curl https://your-app.vercel.app
 ## deployment to vercel
 
 patch 1
+
+## deployment to vercel
+
+patch 2
