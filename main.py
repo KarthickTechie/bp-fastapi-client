@@ -16,8 +16,9 @@ clientID,appId,apiname,apischema
 
 
 ## TODO 1 : 1 create a DatabaseConnectionUrl variable
+DATABASE_URL = 'mysql+pymysql://root:root@localhost:3306/build_perfect'
 ##DATABASE_URL = 'postgresql://postgres:postgres@192.168.0.172:5432/postgres'
-DATABASE_URL = 'postgresql://neondb_owner:npg_x7sCnUzQW0iM@ep-curly-scene-a4fstp5c-pooler.us-east-1.aws.neon.tech/buildperfect?sslmode=require&channel_binding=require'
+# DATABASE_URL = 'postgresql://neondb_owner:npg_x7sCnUzQW0iM@ep-curly-scene-a4fstp5c-pooler.us-east-1.aws.neon.tech/buildperfect?sslmode=require&channel_binding=require'
 ## DATABASE_URL = os.environ["DATABASE_URL"]
 ## TODO 2 - create engine 
 
@@ -136,4 +137,6 @@ def updatePageDetails(id:PageItemID,session:SessionDep):
 ## update a page by pageID
 
 
-     
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

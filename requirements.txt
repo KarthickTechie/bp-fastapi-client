@@ -1,5 +1,5 @@
-fastapi
-uvicorn[standard]
-sqlalchemy
-psycopg2-binary
-pydantic
+fastapi==0.121.0
+uvicorn==0.24.0
+sqlmodel==0.0.27
+pydantic==2.12.4
+psycopg2-binary==2.9.11
